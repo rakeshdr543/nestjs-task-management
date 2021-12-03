@@ -15,6 +15,12 @@ export class TasksService {
     return this.tasks.find((item) => item.id === id);
   }
 
+  updateTask(id: string, status): Task {
+    const task = this.getSingleTask(id);
+    task.status = status;
+    return task;
+  }
+
   deleteTaskById(id: string): void {
     this.tasks = this.tasks.filter((item) => item.id !== id);
   }
