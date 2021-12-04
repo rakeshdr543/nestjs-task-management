@@ -5,6 +5,7 @@ import { TaskStatus } from './task-status.enum';
 
 @Injectable()
 export class TasksService {
+  // without db
   // getAllTasks(): Task[] {
   //   return this.tasks;
   // }
