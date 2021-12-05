@@ -13,5 +13,5 @@ export class User {
   password: string;
 
   @OneToMany((_type) => Task, (task) => task.user, { eager: true })
-  tasks: Task;
+  tasks: Task[];
 }
